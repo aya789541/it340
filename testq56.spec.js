@@ -12,4 +12,11 @@ describe.only("Bank Tests", () => {
         
         expect(spy).toHaveBeenCalledWith(accountId);
     });
+    test("getBalance returns correct balance", () => {
+        const fakeBalance = 200;
+        bankDAO.retrieveBalance.mockReturnValue(fakeBalance);
+        const balance = bank.getBalance(123);
+        expect(balance).toBe(fakeBalance);
+    });
+    
 });
