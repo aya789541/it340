@@ -14,7 +14,7 @@ function containsDigit(password) {
 function containsLetter(password) {
     return Array.from(password).some(char => /[a-zA-Z]/.test(char));
 }
-//si il contient des crcteres speciaux
+//verif si il contient des crcteres speciaux
 function containsSpecialCharacter(password, specialChars = "!@#$%^&*") {
     return new RegExp(`[${specialChars}]`).test(password);
 }
