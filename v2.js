@@ -14,7 +14,16 @@ function displayOccurrences(tab) {
         console.log("Aucune occurrence !");
     }
 }
+// Refactoring : Découpage en modules, indentation, paramètres, responsabilité
+//calcul de  somme  de tableau
+function calculateArraySum(array) {
+    return array.reduce((sum, current) => sum + current, 0);
+}
 
-// Exécuter la fonction avec un exemple
+// Exécuter la fonction de calcul de somme  avec un exemple
+const myArray2 = [1, 2, 3, 4, 5];
+console.log(`La somme du tableau est : ${calculateArraySum(myArray2)}`);
+
+// Exécuter la fonction  de  calcul d'occurence et d'affichage avec un exemple
 const myArray = ["lolo", "abc", "lolo", "xyz", "lolo"];
 displayOccurrences(myArray);

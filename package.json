@@ -1,0 +1,15 @@
+{
+  "name": "it340",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cipher.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
