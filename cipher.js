@@ -7,6 +7,6 @@
 //   expect ou on met lactuelle permet de  venir  expect(true).toEqual(true); apres  f  terminalnpm test 
 //    }));
 //expect(cipher('hello')).toEqual("-------");
-//      actiual expected 
+//      actual expected 
 //refactor  3l cipher 
 //describe (modulename,)
