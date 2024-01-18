@@ -1,3 +1,3 @@
 const patientCache = {};
 
-module.exports = patientCache;
+module.exports = { patientCache };

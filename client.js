@@ -1,14 +1,15 @@
-const patientService = require('./patientService');
+const patientCommand = require('./patientCommand');
+const patientQuery = require('./patientQuery');
 
 // Ajouter des patients
-patientService.addPatient("Doe", "John");
-patientService.addPatient("Smith", "Jane");
+patientCommand.addPatient("Doe", "John");
+patientCommand.addPatient("Smith", "Jane");
 
 // Lister tous les patients
-console.log("Liste des patients:", patientService.getPatientList());
+console.log("Liste des patients:", patientQuery.getPatientList());
 
 // Modifier un patient
-patientService.savePatient(1, "Doe", "Jonathan");
+patientCommand.savePatient(1, "Doe", "Jonathan");
 
 // Récupérer un patient spécifique
-console.log("Patient modifié:", patientService.getPatient(1));
+console.log("Patient modifié:", patientQuery.getPatient(1));
