@@ -23,6 +23,18 @@
       font-size: max(var(--font-size-large), 32px); /* Taille de police pour le header, avec un minimum de 32px */
       height: 5rem; /* Hauteur fixée à 5rem */
       width: 50%; /* Largeur fixée à 50% du conteneur parent */
+      animation: font-slide 2s linear infinite; /* Appliquer l'animation font-slide */
+    }
+    @keyframes font-slide {
+      from {
+        text-align: start;
+      }
+      50% {
+        text-align: center;
+      }
+      to {
+        text-align: end;
+      }
     }
   </style>
   
