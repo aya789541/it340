@@ -6,16 +6,21 @@
 
   <style>
     /* fichier header.css */
-    /* Définition de l'échelle d'espacement */
+    
+    /* Définition de l'échelle d'espacement avec des unités 'em' */
     :root {
-      --padding-small: 10px; /* Petit padding */
-      --padding-medium: 20px; /* Padding moyen */
-      --padding-large: 30px; /* Grand padding */
+        --padding-small: 0.625em; 
+      --padding-medium: 1.25em; 
+      --padding-large: 1.875em;
+      --font-size-small: 14px; /* Petite taille de police */
+      --font-size-medium: 18px; /* Taille de police moyenne */
+      --font-size-large: 24px; /* Grande taille de police */
     }
     .header {
    
       border: 2px solid green;
       padding: var(--padding-large); /* Grand padding pour le header */
+      font-size: var(--font-size-large); /* Grande taille de police pour le header */
     }
   </style>
   
@@ -25,6 +30,7 @@
     .section {
         padding: var(--padding-medium); /* Padding moyen pour la section */
       border: 2px solid orange;
+      font-size: var(--font-size-medium); /* Taille de police moyenne pour les sections */
     }
   </style>
   
@@ -34,6 +40,7 @@
     .footer {
         padding: var(--padding-small); /* Petit padding pour le footer */
       border: 2px solid green;
+      font-size: var(--font-size-small); /* Petite taille de police pour le footer */
     }
   </style>
 
