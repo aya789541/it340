@@ -24,6 +24,7 @@
       height: 5rem; /* Hauteur fixée à 5rem */
       width: 50%; /* Largeur fixée à 50% du conteneur parent */
       animation: font-slide 2s linear infinite; /* Appliquer l'animation font-slide */
+      grid-area: header;
     }
     @keyframes font-slide {
       from {
@@ -62,7 +63,9 @@
       border: 2px solid green;
       font-size: var(--font-size-small); /* Petite taille de police pour le footer */
       direction: rtl; /* Direction de droite à gauche */
+      grid-area: footer;
     }
+    
     .flex-container {
       display: flex; /* Active Flexbox */
     }
@@ -71,9 +74,11 @@
       flex: 1; /* Prend 1 portion de l'espace disponible */
       background-color: #f0f0f0; /* Couleur de fond pour la sidebar */
       height: 100vh; /* Hauteur totale de la vue */
+      grid-area: sidebar;
     }
 
     .content {
+        grid-area: content;
       flex: 3; /* Prend 3 portions de l'espace disponible */
     }
 
@@ -86,14 +91,16 @@
   <body>
     <div class="header">Ceci est un header</div>
     
-    <div class="flex-container">
+    <div class="grid-container">
+        <div class="header">Ceci est un header</div>
         <div class="sidebar">Sidebar</div>
         <div class="content">
           <div class="section">Section 1</div>
           <div class="section">Section 2</div>
         </div>
+        <div class="footer" dir="rtl">Ceci est un footer</div>
       </div>
     
-    <div class="footer" dir="rtl">Ceci est un footer</div>
+    
   </body>
 </html> 
